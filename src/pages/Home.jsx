@@ -27,14 +27,16 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
-  plugins: {
-    legend: {
-      position: "top",
-    },
-    title: {
-      display: true,
-      text: "Chart.js Line Chart",
-    },
+  scales: {
+    y: [
+      {
+        ticks: {
+          callback: function (value) {
+            return value + "%";
+          },
+        },
+      },
+    ],
   },
 };
 
@@ -44,8 +46,8 @@ export const data = {
   labels,
   datasets: [
     {
-      label: "Dataset 1",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 1 })),
+      label: "Productivity",
+      data: labels.map(() => faker.datatype.number({ min: 0, max: 100 })),
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
     },
@@ -94,7 +96,10 @@ function Home() {
           </div>
         </div>
       </div>
-      <Line options={options} data={data} />
+      <div className="py-10">
+        <div className="text-5xl font-bold mb-4">Productivity (%)</div>
+        <Line options={options} data={data} />
+      </div>
     </div>
   );
 }
