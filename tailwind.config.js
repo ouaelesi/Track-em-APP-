@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         sidebar: "#4571E01C",
         "bg-text": "#00000099",
+        "track-blue": "#316AFF",
       },
     },
   },
