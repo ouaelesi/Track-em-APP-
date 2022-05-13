@@ -14,7 +14,7 @@ function Home() {
             <p className="opacity-60 text-xl">Nombre d'employés</p>
             <p className="text-xl">20</p>
           </div>
-          <div className="flex">
+          <div className="flex ">
             <img src={profile1} alt="profile 1" />
             <img src={profile2} alt="profile 2" />
             <img src={profile3} alt="profile 3" />
