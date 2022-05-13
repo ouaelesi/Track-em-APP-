@@ -106,7 +106,7 @@ function Sidebar() {
           </span>
         </Link>
         <Link
-          to="/logouts"
+          to="/logout"
           className="flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded mt-2"
         >
           <img src={logout} alt="logout" />

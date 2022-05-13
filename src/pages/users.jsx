@@ -1,10 +1,10 @@
 import React from "react";
-import UpBar from "../components/UpBar";
+import ButtonGroup from "../components/ButtonGroup";
 
 const Users = () => {
   return (
     <div>
-      <UpBar />
+      <ButtonGroup />
     </div>
   );
 };
