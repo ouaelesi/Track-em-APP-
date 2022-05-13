@@ -2,8 +2,11 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
 
   theme: {
-    colors: {
-      
+    extend: {
+      colors: {
+        sidebar: "#4571E01C",
+        "bg-text": "#00000099",
+      },
     },
   },
 
