@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Recommendations from "./pages/Recommendations";
 import Users from "./pages/users";
+import "swiper/css/bundle";
 
 function App() {
   return (
