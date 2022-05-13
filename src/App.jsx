@@ -4,7 +4,6 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 import Users from "./pages/users";
 import "swiper/css/bundle";
-import "./styles/styles.css";
 
 function App() {
   return (
