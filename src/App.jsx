@@ -3,12 +3,14 @@ import Sidebar from "./components/Sidebar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Users from "./pages/users";
+import "swiper/css/bundle";
+import "./styles/styles.css";
 
 function App() {
   return (
     <div className="flex">
       <Sidebar />
-      <div className="flex-1 pl-14 pt-8">
+      <div className="flex-1 pl-14 pt-8 bg-gray-50">
         <Routes>
           <Route path="/users" element={<Users />}></Route>
           <Route path="/" element={<Home />} />
