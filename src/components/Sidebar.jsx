@@ -10,7 +10,7 @@ import logout from "../assets/icons/logout.png";
 import { Link } from "react-router-dom";
 
 function Sidebar() {
-  const [isSidebarOpened, setIsSidebarOpened] = useState(false);
+  const [isSidebarOpened, setIsSidebarOpened] = useState(true);
   const [active, setActive] = useState([1, 0, 0, 0]);
   const handleClick = (i) => {
     const a = [0, 0, 0, 0];
