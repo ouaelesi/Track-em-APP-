@@ -15,7 +15,7 @@ const Users = () => {
       <div className="w-9/12 mx-auto mb-5">
         <SearchInput />
       </div>
-      <EmpScroller />
+      <EmpScroller data={Data} />
     </div>
   );
 };

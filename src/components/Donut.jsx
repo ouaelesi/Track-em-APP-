@@ -9,7 +9,7 @@ export default function App(props) {
   const data = {
     datasets: [
       {
-        data: [30, 70],
+        data: [100 - props.pourcetage, props.pourcetage],
         backgroundColor: ["#FFFFFF00", props.color],
         hoverBackgroundColor: ["#FFFFFF00", props.color],
         borderWidth: 0.5,
@@ -18,6 +18,7 @@ export default function App(props) {
   };
   App.propTypes = {
     color: PropTypes.string,
+    pourcetage: PropTypes.number,
   };
   return <Doughnut data={data} />;
 }
