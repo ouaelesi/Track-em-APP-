@@ -1,7 +1,8 @@
 import React, { useState } from "react";
+import PropTypes from "prop-types";
 
-const UpBar = () => {
-  const [activeProblem, setProblem] = useState(1);
+const UpBar = (props) => {
+  const [activeProblem, setProblem] = useState(0);
   const problems = ["Day", "Week", "Month", "Year"];
 
   return (
@@ -12,7 +13,10 @@ const UpBar = () => {
             key === activeProblem ? "bg-white text-blue-500" : "bg-transparant"
           }`}
           key={key}
-          onClick={() => setProblem(key)}
+          onClick={() => {
+            setProblem(key);
+            props.setType(key);
+          }}
         >
           {problem}
         </div>
@@ -20,5 +24,7 @@ const UpBar = () => {
     </div>
   );
 };
-
+UpBar.propTypes = {
+  setType: PropTypes.func,
+};
 export default UpBar;
