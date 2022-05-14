@@ -11,6 +11,12 @@ import { Link } from "react-router-dom";
 
 function Sidebar() {
   const [isSidebarOpened, setIsSidebarOpened] = useState(true);
+  const [active, setActive] = useState([1, 0, 0, 0]);
+  const handleClick = (i) => {
+    const a = [0, 0, 0, 0];
+    a[i] = 1;
+    setActive(a);
+  };
   return (
     <aside
       className={`${
@@ -39,7 +45,12 @@ function Sidebar() {
       <ul className="p-5 pt-8">
         <Link
           to="/"
-          className="flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded mt-2"
+          className={`flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded-md mt-2 ${
+            active[0]
+              ? "bg-blue-400 text-white font-semibold"
+              : "bg-transparent"
+          }`}
+          onClick={() => handleClick(0)}
         >
           <img src={home} alt="home" />
           <span
@@ -52,7 +63,12 @@ function Sidebar() {
         </Link>
         <Link
           to="/users"
-          className="flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded mt-2"
+          className={`flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded-md mt-2 ${
+            active[1]
+              ? "bg-blue-400 text-white font-semibold"
+              : "bg-transparent"
+          }`}
+          onClick={() => handleClick(1)}
         >
           <img src={users} alt="users" />
           <span
@@ -65,7 +81,12 @@ function Sidebar() {
         </Link>
         <Link
           to="/recommendations"
-          className="flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded mt-2"
+          className={`flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded-md mt-2 ${
+            active[2]
+              ? "bg-blue-400 text-white font-semibold"
+              : "bg-transparent"
+          }`}
+          onClick={() => handleClick(2)}
         >
           <img src={recommendations} alt="recommendations" />
           <span
@@ -78,7 +99,12 @@ function Sidebar() {
         </Link>
         <Link
           to="/guide"
-          className="flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded mt-2"
+          className={`flex text-bg-text items-center gap-x-4 cursor-pointer hover:text-gray-400 p-2 rounded-md mt-2 ${
+            active[3]
+              ? "bg-blue-400 text-white font-semibold"
+              : "bg-transparent"
+          }`}
+          onClick={() => handleClick(3)}
         >
           <img src={guide} alt="guide" />
           <span
