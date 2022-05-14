@@ -14,7 +14,7 @@ const Employee = (props) => {
       </div>
       <div className="flex gap-20 mt-3">
         <div className="text-gray-400">Productivity</div>
-        <div className="text-blue-400">{props.data.Productivity[0]}%</div>
+        <div className="text-blue-400">{props.data.productivity[0]}%</div>
       </div>
     </div>
   );
