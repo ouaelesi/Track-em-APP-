@@ -13,7 +13,7 @@ const UserDetails = () => {
   const [statType, setType] = useState(0);
   useEffect(() => {
     setTimeout(() => {
-      fetch(`http://localhost:8080/api/employees/${id}`)
+      fetch(`http://trackem-api.herokuapp.com/api/employees/${id}`)
         .then((res) => {
           if (!res.ok) {
             throw Error("could not fetch the data for that resource");
