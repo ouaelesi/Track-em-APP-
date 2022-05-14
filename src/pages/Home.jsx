@@ -57,12 +57,11 @@ export const data = {
 function Home() {
   return (
     <div className="mt-8 px-10">
-      <SearchInput />
-      <div className="mt-8 flex gap-14 text-white">
+      <div className="mt-8 flex gap-8 text-white">
         <div className="flex flex-col items-start bg-track-blue p-8 rounded-2xl">
           <p className="font-bold text-4xl">Burnout</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d employés</p>
+            <p className="opacity-60 text-xl">Nombre d'employés</p>
             <p className="text-xl">20</p>
           </div>
           <div className="flex ">
@@ -74,8 +73,8 @@ function Home() {
         <div className="flex flex-col items-start bg-track-green p-8 rounded-2xl">
           <p className="font-bold text-4xl">Depression</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d employés</p>
-            <p className="text-xl">20</p>
+            <p className="opacity-60 text-xl">Nombre d'employés</p>
+            <p className="text-xl">16</p>
           </div>
           <div className="flex">
             <img src={profile1} alt="profile 1" />
@@ -86,8 +85,8 @@ function Home() {
         <div className="flex flex-col items-start bg-track-orange p-8 rounded-2xl">
           <p className="font-bold text-4xl">Anxiety</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d employés</p>
-            <p className="text-xl">20</p>
+            <p className="opacity-60 text-xl">Nombre d'employés</p>
+            <p className="text-xl">14</p>
           </div>
           <div className="flex">
             <img src={profile1} alt="profile 1" />
@@ -96,8 +95,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="py-10 px-10">
-        <div className="text-5xl font-bold mb-4">Productivity (%)</div>
+      <div className="py-10 px-10 w-9/12 flex flex-col">
+        <div className="text-4xl font-bold mb-4">Productivity (%)</div>
         <Line options={options} data={data} />
       </div>
     </div>
