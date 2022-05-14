@@ -56,9 +56,9 @@ export const data = {
 
 function Home() {
   return (
-    <div className="mt-8 px-32">
+    <div className="mt-8 px-10">
       <SearchInput />
-      <div className="mt-8 flex justify-between text-white">
+      <div className="mt-8 flex gap-14 text-white">
         <div className="flex flex-col items-start bg-track-blue p-8 rounded-2xl">
           <p className="font-bold text-4xl">Burnout</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
@@ -96,7 +96,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="py-10">
+      <div className="py-10 px-10">
         <div className="text-5xl font-bold mb-4">Productivity (%)</div>
         <Line options={options} data={data} />
       </div>

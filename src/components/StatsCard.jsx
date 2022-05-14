@@ -9,7 +9,7 @@ const StatsCard = () => {
 
       <div className="text-center text-gray-400">Degree of</div>
       <div className="font-bold text-center text-xl">Productivity</div>
-      <div className="absolute top-24 pt-2 left-24 text-2xl font-bold">70%</div>
+      <div className="absolute top-24 pt-4 left-24 text-2xl font-bold">70%</div>
     </div>
   );
 };
