@@ -7,7 +7,6 @@ Chart.register(ArcElement);
 
 export default function App(props) {
   const data = {
-    labels: ["I", "II", "III", "IIII"],
     datasets: [
       {
         data: [30, 70],

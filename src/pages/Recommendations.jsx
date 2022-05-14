@@ -2,7 +2,7 @@ import ButtonGroup from "../components/ButtonGroup";
 
 function Recommendations() {
   return (
-    <div className="mt-4">
+    <div className="mt-4 px-8">
       <div className="flex justify-center">
         <ButtonGroup />
       </div>
