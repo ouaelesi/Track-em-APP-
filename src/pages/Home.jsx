@@ -1,4 +1,3 @@
-import SearchInput from "../components/SearchInput";
 import profile1 from "../assets/profiles/1.png";
 import profile2 from "../assets/profiles/2.png";
 import profile3 from "../assets/profiles/3.png";
@@ -61,7 +60,7 @@ function Home() {
         <div className="flex flex-col items-start bg-track-blue p-8 rounded-2xl">
           <p className="font-bold text-4xl">Burnout</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d'employés</p>
+            <p className="opacity-60 text-xl">Nombre d&apos;employés</p>
             <p className="text-xl">20</p>
           </div>
           <div className="flex ">
@@ -73,7 +72,7 @@ function Home() {
         <div className="flex flex-col items-start bg-track-green p-8 rounded-2xl">
           <p className="font-bold text-4xl">Depression</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d'employés</p>
+            <p className="opacity-60 text-xl">Nombre d&apos;employés</p>
             <p className="text-xl">16</p>
           </div>
           <div className="flex">
@@ -85,7 +84,7 @@ function Home() {
         <div className="flex flex-col items-start bg-track-orange p-8 rounded-2xl">
           <p className="font-bold text-4xl">Anxiety</p>
           <div className="flex gap-x-5 justify-between my-4 font-semibold">
-            <p className="opacity-60 text-xl">Nombre d'employés</p>
+            <p className="opacity-60 text-xl">Nombre d&apos;employés</p>
             <p className="text-xl">14</p>
           </div>
           <div className="flex">

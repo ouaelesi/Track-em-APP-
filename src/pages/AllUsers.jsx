@@ -17,7 +17,7 @@ const AllUsers = () => {
     }
   };
   return (
-    <div>
+    <div className="flex flex-col items-center">
       <div className="flex justify-center mt-">
         <ButtonGroup />
       </div>
