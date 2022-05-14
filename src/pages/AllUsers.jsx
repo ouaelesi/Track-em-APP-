@@ -11,7 +11,7 @@ const AllUsers = () => {
   const [all, setAll] = useState(null);
   useEffect(() => {
     setTimeout(() => {
-      fetch("http://trackem-api.herokuapp.com/api/employees/")
+      fetch("https://trackem-api.herokuapp.com/api/employees/")
         .then((res) => {
           if (!res.ok) {
             throw Error("could not fetch the data for that resource");
