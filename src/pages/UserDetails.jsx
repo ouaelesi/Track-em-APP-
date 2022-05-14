@@ -6,7 +6,7 @@ import UpBar from "../components/UpBar";
 const UserDetails = () => {
   return (
     <div>
-      <div className="pt-5 text-2xl font-bold">User's Details</div>
+      <div className="pt-5 text-2xl font-bold">User s Details</div>
       <div className="w-fit flex mx-auto gap-10 bg-white border-2 border-gray-200 rounded-xl p-5 shadow-sm mt-2 shadow-blue-100">
         <img src={photo} width="70px" />
         <div>
