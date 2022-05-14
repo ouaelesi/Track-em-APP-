@@ -7,18 +7,16 @@ import PropTypes from "prop-types";
 const CardsSlider = (props) => {
   return (
     <div className="mt-10 mb-10 flex gap-5">
-      {props.data.map((emp, key) => (
-        <Link to={`/users/${emp._id}`} key={key}>
-          <a>
-            <EmployeeCard employee={emp} />
-          </a>
+      {props.data.map((emp) => (
+        <Link to={`/users/${emp.id}`} key={emp.id}>
+          <EmployeeCard employee={emp} />
         </Link>
       ))}
     </div>
   );
 };
 CardsSlider.propTypes = {
-  data: PropTypes.object,
+  data: PropTypes.array,
 };
 
 export default CardsSlider;

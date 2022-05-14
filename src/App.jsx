@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Recommendations from "./pages/Recommendations";
-import Users from "./pages/users";
+import AllUsers from "./pages/AllUsers";
 import UserDetails from "./pages/UserDetails";
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
         <div className="text-gray-400 text- mt-2 pl-2">Welcome HR Evan</div>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users />} />
+          <Route path="/users" element={<AllUsers />} />
           <Route path="/recommendations" element={<Recommendations />} />
           <Route path="*" element={<NotFound />} />
-          <Route path="/users/:_id" element={<UserDetails />} />
+          <Route path="/users/:id" element={<UserDetails />} />
         </Routes>
       </div>
     </div>

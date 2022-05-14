@@ -1,6 +1,6 @@
 export default [
   {
-    _id: 0,
+    id: 0,
     name: "Ouael Sahbi",
     photo: "",
     Productivity: [64, 50, 75, 55],
@@ -11,7 +11,7 @@ export default [
     Year: [90, 80, 20],
   },
   {
-    _id: 1,
+    id: 1,
     name: "Abdou razi",
     photo: "",
     Productivity: [44, 50, 75, 60],
@@ -22,7 +22,7 @@ export default [
     Year: [40, 80, 99],
   },
   {
-    _id: 2,
+    id: 2,
     name: "Ayoub khenfouf",
     photo: "",
     Productivity: [74, 80, 75, 60],
@@ -33,7 +33,7 @@ export default [
     Year: [75, 63, 49],
   },
   {
-    _id: 3,
+    id: 3,
     name: "Aymen berriche",
     photo: "",
     Productivity: [53, 80, 70, 60],
@@ -44,7 +44,7 @@ export default [
     Year: [71, 50, 49],
   },
   {
-    _id: 4,
+    id: 4,
     name: "Normal",
     photo: "",
     Productivity: [77, 90, 50, 60],
