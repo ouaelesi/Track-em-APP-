@@ -10,7 +10,7 @@ const CardsSlider = (props) => {
       {props.data.map((emp, key) => (
         <Link to={`/users/${emp._id}`} key={key}>
           <a>
-            <EmployeeCard color="red-400" employee={emp} />
+            <EmployeeCard employee={emp} />
           </a>
         </Link>
       ))}
