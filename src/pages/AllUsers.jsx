@@ -22,7 +22,6 @@ const AllUsers = () => {
           setUsers(data.employees);
           setIsPending(false);
           setAll(data.employees);
-          console.log(all);
         })
         .catch((err) => {
           setIsPending(false);
